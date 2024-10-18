@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../../public/image/emiratesoptical-logo-2.png (1).png";
 import logos from "../../../public/image/Frame 1430.png";
-import LogoFooter from "../../../public/svg/logoFooter";
 
 const Footer = () => {
   return (
@@ -12,8 +11,8 @@ const Footer = () => {
           <p className="font-rubik font-semibold">THE EYEWEAR</p>
           <p className="font-rubik font-semibold">YOU NEED</p>
         </div>
-        {/* <Image src={logo} alt="" className="h-32 mr-10" /> */}
-        <LogoFooter/>
+        <Image src={logo} alt="" className="h-32 mr-10" />
+        {/* <LogoFooter/> */}
       </div>
       <div className="bg-[#232321] h-64 mx-24 mt-[-45px] pt-5 flex justify-between items-center rounded-t-[48px]">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
