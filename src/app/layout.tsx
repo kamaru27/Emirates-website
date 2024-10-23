@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-
+import Header from "./_layout/Header";
+import Footer from "./_layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -35,7 +37,11 @@ export default function RootLayout({
       <body
         className={`${rubik.variable} ${geistMono.variable} ${geistSans.variable} antialiased`}
       >
+        <Header />
+        <Toaster position="top-center" containerClassName="mt-4" />
+
         {children}
+        <Footer />
       </body>
     </html>
   );

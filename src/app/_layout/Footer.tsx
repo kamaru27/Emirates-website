@@ -5,7 +5,7 @@ import logos from "../../../public/image/Frame 1430.png";
 
 const Footer = () => {
   return (
-    <>
+    <div className="bg-[#E7E7E3]">
       <div className="bg-[#CC0033] h-64 mx-24 pt-10 pb-20 flex justify-between items-center rounded-t-[48px] text-white">
         <div className="text-7xl ml-12">
           <p className="font-rubik font-semibold">THE EYEWEAR</p>
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
